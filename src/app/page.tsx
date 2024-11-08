@@ -62,7 +62,7 @@ const LandingPage = () => {
                     <h1 className="text-6xl font-bold text-white mb-4">HoopHub</h1>
                     <p className="text-xl text-gray-300 mb-8">Group 18, CMPT 362, Fall 2024</p>
                     <div className="flex justify-center space-x-4">
-                        <a href="#"
+                        <a href="https://github.com/tigerokuma/HoopHub"
                            className="flex items-center gap-2 px-6 py-3 bg-white/10 rounded-full text-white hover:bg-white/20 transition">
                             <Github className="w-5 h-5"/>
                             GitHub

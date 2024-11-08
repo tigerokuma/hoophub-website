@@ -55,6 +55,25 @@ const LandingPage = () => {
         "Player Profile System"
     ];
 
+    const contributions = [
+        {
+            name: "Jeffrey Loverock",
+            contribution: "Basic UI skeleton, ProfileFragment, and EditDeleteProfile activity."
+        },
+        {
+            name: "Paul Atwal",
+            contribution: "Implemented the playerFragment."
+        },
+        {
+            name: "Taiga Okuma",
+            contribution: "Integrated map, planned MVVM architecture, and built the architecture and data flow."
+        },
+        {
+            name: "Kristina Tretiakova",
+            contribution: "Created Firebase database, Firebase storage, implemented sign-in and log-in, and profile picture URL retrieval."
+        }
+    ];
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
             <div className="max-w-6xl mx-auto px-4 py-16">
@@ -99,6 +118,19 @@ const LandingPage = () => {
                         <div className="flex justify-center">
                             <img src="/mvvm.jpeg" alt="MVVM Architecture Diagram" className="w-full max-w-6xl rounded-lg shadow-lg"/>
                         </div>
+                    </div>
+                </section>
+
+                {/* Contributions Section */}
+                <section className="mb-16">
+                    <h2 className="text-3xl font-bold text-white mb-8 text-center">Contributions by Team Members</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {contributions.map((item, index) => (
+                            <div key={index} className="p-6 bg-white/10 rounded-lg backdrop-blur-sm text-center">
+                                <h3 className="text-lg font-semibold text-white mb-2">{item.name}</h3>
+                                <p className="text-gray-300">{item.contribution}</p>
+                            </div>
+                        ))}
                     </div>
                 </section>
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github } from 'lucide-react'; // Remove Youtube from this line
+import { Github } from 'lucide-react';
+
 // Define types for the props
 type TeamMemberProps = {
     name: string,
@@ -91,6 +92,14 @@ const LandingPage = () => {
                         title="Show and Tell 1"
                         link="https://www.youtube.com/watch?v=htNIEuc_xWs"
                     />
+
+                    {/* Image under the videos with title */}
+                    <div className="mt-8">
+                        <h2 className="text-3xl font-bold text-white text-center mb-4">MVVM Architecture for Our App</h2>
+                        <div className="flex justify-center">
+                            <img src="/mvvm.jpeg" alt="MVVM Architecture Diagram" className="w-full max-w-6xl rounded-lg shadow-lg"/>
+                        </div>
+                    </div>
                 </section>
 
                 {/* Project Progress */}
